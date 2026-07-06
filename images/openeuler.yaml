@@ -4,7 +4,7 @@ image:
     openEuler {{ image.release }}
 source:
   downloader: openeuler-http
-  url: https://mirrors.ocf.berkeley.edu/openeuler/
+  url: https://mirror.iscas.ac.cn/openeuler/
 targets:
   lxc:
     create_message: |
@@ -245,6 +245,7 @@ packages:
     architectures:
     - x86_64
     - aarch64
+    - loongarch64
 
   - packages:
     - NetworkManager
