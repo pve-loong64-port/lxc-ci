@@ -281,6 +281,7 @@ actions:
     
     TARGET="x86_64"
     [ "$(uname -m)" = "aarch64" ] && TARGET="arm64"
+    [ "$(uname -m)" = "loongarch64" ] && TARGET="loongarch64"
 
     # Install GRUB
     grub-install --efi-directory=/boot/efi --target="${TARGET}-efi" --bootloader-id=BOOT --removable
